@@ -11,7 +11,7 @@ import jakarta.persistence.Table; //anotação que indica o nome da tabela no ba
 @Entity //anotação que indica que a classe é uma entidade JPA
 @Table(name = "TBL_PRODUCT") //anotação que indica o nome da tabela no banco de dados
 
-public class Product implements Serializable { //classe Product que implementa a interface Serializable 
+public class Product implements Serializable { //classe Product que implementa a interface Serializable, a interface Serializable é usada para converter o objeto em uma sequência de bytes para que ele possa ser facilmente armazenado ou transmitido
 
     @Id //anotação que indica que o atributo é a chave primária da tabela
     @GeneratedValue(strategy =  GenerationType.IDENTITY) //anotação que indica que o valor do id será gerado automaticamente pelo banco de dados
